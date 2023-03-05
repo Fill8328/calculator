@@ -13,19 +13,19 @@ public class ChoseOperation {
         switch (operations) {
             case ("+"):
                 System.out.println("you chose Summ");
-                System.out.println("you Summ is " + Summ.summ());
+                System.out.println("result Summ is " + Summ.summ());
                 break;
             case ("-"):
                 System.out.println("you chose Subtraction");
-                System.out.println("you Subtraction is " + Subtraction.subtraction());
+                System.out.println("result Subtraction is " + Subtraction.subtraction());
                 break;
             case ("*"):
                 System.out.println("you chose Multiplication");
-                System.out.println("you Multiplication is " + Multiplication.multiplication());
+                System.out.println("result Multiplication is " + Multiplication.multiplication());
                 break;
             case ("/"):
                 System.out.println("you chose Division");
-                System.out.println("you Division is " + Division.division());
+                System.out.println("result Division is " + Division.division());
                 break;
         }
     }
