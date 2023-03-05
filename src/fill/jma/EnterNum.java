@@ -10,7 +10,13 @@ public class EnterNum {
         System.out.println("Write number");
         System.out.print("a=");
         int a = Integer.parseInt(reader.readLine());
+        try {
+            a = Integer.parseInt(reader.readLine());
+        } catch (IOException e){
+            System.out.println("loh pidar");
+        }
         return a;
+
     }
 
     public static int enterNumB() throws IOException {
@@ -20,4 +26,6 @@ public class EnterNum {
         int b = Integer.parseInt(reader.readLine());
         return b;
     }
+
+
 }

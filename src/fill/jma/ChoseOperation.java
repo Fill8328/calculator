@@ -5,11 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ChoseOperation {
-    public static void choseOperation() throws IOException {
+    public static void choseOperation() throws ScannerException, IOException {
         System.out.println("Hello! What are you want do? + - * / ?");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String operations = String.valueOf(reader.readLine());
-
         switch (operations) {
             case ("+"):
                 System.out.println("you chose Summ");
@@ -28,5 +27,6 @@ public class ChoseOperation {
                 System.out.println("result Division is " + Division.division());
                 break;
         }
+        throw new ScannerException("incorrect operations, please chose  only + - * /");
     }
 }
