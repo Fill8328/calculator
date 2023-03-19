@@ -4,9 +4,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, ScannerException {
-	ChoseOperation.choseOperation();
-
-
+    public static void main(String[] args) throws IOException {
+        ChoseOperation.choseOperation();
     }
 }
